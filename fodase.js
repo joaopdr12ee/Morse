@@ -1,6 +1,8 @@
 
 fodasepacas = document.getElementById('123');
 
+fodasekk = document.querySelector('.fodaseimg');
+
 fodase_morse = ['.-','-...','-.-.','-..','.','..-.','--.','....','..','.---','-.-','.-..','--','-.','---','.--.','--.-',
 '.-.','...','-','..-','...-','.--','-..-','-.--','--..']
 fodase_letra = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
@@ -11,6 +13,7 @@ function fodasemuito(){
     certo = [];
     i = fodasepacas.value;
     y = 0;
+
 
     while(y != i){
         rand = Math.floor(25* Math.random());
@@ -28,4 +31,9 @@ function fodasemuito(){
     }
     p = (certo.length/i) * 100
     alert('Você acertou: '+ certo.length+'/'+i+' ou seja '+ p+'%')
+    fodasekk.style.display = 'flex';
+}
+
+function chang(){
+    fodasekk.style.display = 'none';
 }
