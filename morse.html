@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>morse</title>
+    <style>
+        .fodasedemais{
+            position: fixed;
+            display: flex;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #111;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 5px 5px 5px #111;
+            gap: 20px;
+        }
+        h3{
+            font-weight: bold;
+            color: white;
+        }
+        input{
+            width: 350px;
+            padding: 10px;
+            border: none;
+            border-radius: 15px;
+            color: #111;
+            background-color: white;
+            font-weight: bold;
+            text-align: center;
+        }
+        button{
+            background-color: #111;
+            border: 1px solid white;
+            color: white;
+            border-radius: 15px;
+            transition: .5s;
+            font-weight: bold;
+        }
+        button:hover{
+            cursor: pointer;
+            background-color: white;
+            color: #111;
+            transition: .5s;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="fodasedemais">
+        <h3>Teste de morse kk</h3>
+    <input type="text" id="123" placeholder="insira a quantidade de valores a serem testados"><button onclick="fodasemuito()">start</button> 
+</div>
+</body>
+<script src="fodase.js"></script>
+</html>
